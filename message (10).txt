@@ -1,0 +1,110 @@
+
+
+local plr = game.Players.LocalPlayer
+local mouse = plr:GetMouse()
+for i,x in pairs(game.Players:GetPlayers()) do
+if x.Name ~= game:GetService('Players').LocalPlayer.Name then
+    pcall(function()
+       mouse.KeyDown:connect(function(key)
+                     if key == "q" then
+                         
+   
+        x.Character.Head.CanCollide = false
+         x.Character.Head.Size = Vector3.new(6.3,6.3,6.3)
+x.Character.Head.BrickColor = v.TeamColor
+x.Character.Head.Transparency = 0.7
+
+end
+end)
+end)
+end
+end
+
+local plr = game.Players.LocalPlayer
+local mouse = plr:GetMouse()
+for i,x in pairs(game.Players:GetPlayers()) do
+if x.Name ~= game:GetService('Players').LocalPlayer.Name then
+    pcall(function()
+       mouse.KeyDown:connect(function(key)
+                     if key == "e" then
+                        
+   
+        x.Character.Head.CanCollide = false
+         x.Character.Head.Size = Vector3.new(1,1,1)
+x.Character.Head.Transparency = 0.7
+
+
+end
+end)
+end)
+end
+end
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:connect(function(key)
+	if key == "q" then
+
+for i,v in pairs(game.Players:GetPlayers()) do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+
+local ar = v.Character:FindFirstChild('Right Arm')
+ar.Size = Vector3.new(6.3,6.3,6.3)
+ar.CanCollide = false
+ar.BrickColor = BrickColor.new("Really Blue")
+ar.Transparency = 0.7
+
+end)
+end
+end
+
+for i,v in pairs(game.Players:GetPlayers()) do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+
+local ar = v.Character:FindFirstChild('Left Arm')
+ar.Size = Vector3.new(6.3,6.3,6.3)
+ar.CanCollide = false
+ar.BrickColor = BrickColor.new("Really Blue")
+ar.Transparency = 0.7
+end)
+end
+end
+end
+end)
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:connect(function(key)
+	if key == "e" then
+
+for i,v in pairs(game.Players:GetPlayers()) do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+
+local ar = v.Character:FindFirstChild('Right Arm')
+ar.Size = Vector3.new(1,1,1)
+ar.CanCollide = false
+ar.BrickColor = BrickColor.new("Really Blue")
+ar.Transparency = 0
+end)
+end
+end
+
+for i,v in pairs(game.Players:GetPlayers()) do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+
+local ar = v.Character:FindFirstChild('Left Arm')
+ar.Size = Vector3.new(1,1,1)
+ar.CanCollide = false
+ar.BrickColor = BrickColor.new("Really Blue")
+ar.Transparency = 0
+end)
+end
+end
+end
+end)
+
+
+
+
