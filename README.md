@@ -1,7 +1,7 @@
 # roblox-sf-scripts-
 made by allfx / 144I8 / heartyhu. ddd/#2467 to DM.
-this is a script used back in the day. 2019/2020 auto duels hbe script.
-should work in other games, but its resizing humanoids so doesn't bypass. 
+these scripts are old. but gold.
+should work in other games, but its resizing ; so doesn't bypass. 
                                
                                
                                
