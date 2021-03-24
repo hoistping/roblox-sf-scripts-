@@ -1,0 +1,134 @@
+print ("Commands:")
+print(";sit")
+print(";reach")
+print(";high jump")
+print(";follow")
+print(";low jump")
+print(";tp")
+print(";click tp")
+print(";noclip press e when said")
+print (";speed on")
+print (";speed off")
+
+
+local plr = game.Players.LocalPlayer
+ for i,v in pairs(game.Players:GetPlayers()) do
+	 v.Chatted:connect(function(message)
+	 if message == ";sit" then
+		game.Players.LocalPlayer.Character.Humanoid.Sit = true 
+	 end
+	 	end)
+		 	end
+
+
+local plr = game.Players.LocalPlayer
+ for i,v in pairs(game.Players:GetPlayers()) do
+	 v.Chatted:connect(function(message)
+	 if message == ";speed on" then
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 400
+	 end
+	 	end)
+		 	end		
+
+			 local plr = game.Players.LocalPlayer
+ for i,v in pairs(game.Players:GetPlayers()) do
+	 v.Chatted:connect(function(message)
+	 if message == ";speed off" then
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	 end
+	 	end)
+		 	end			 
+
+			 local plr = game.Players.LocalPlayer
+ for i,v in pairs(game.Players:GetPlayers()) do
+	 v.Chatted:connect(function(message)
+	 if message == ";high jump" then
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 500
+			game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	 end
+	 	end)
+		 	end		
+
+			 			 local plr = game.Players.LocalPlayer
+ for i,v in pairs(game.Players:GetPlayers()) do
+	 v.Chatted:connect(function(message)
+	 if message == ";low jump" then
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+			game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	 end
+	 	end)
+		 	end		
+
+
+			 local plr = game.Players.LocalPlayer
+ for i,v in pairs(game.Players:GetPlayers()) do
+	 v.Chatted:connect(function(message)
+	 if message == ";follow" then
+		game.Players.LocalPlayer.Character.Humanoid:MoveTo(v.Character.Torso.Position)
+	 end
+	 	end)
+		 	end		
+
+			 local plr = game.Players.LocalPlayer
+ for i,v in pairs(game.Players:GetPlayers()) do
+	 v.Chatted:connect(function(message)
+	 if message == ";tp" then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.Torso.Position)
+	 end
+	 	end)
+		 	end		
+
+			 local plr = game.Players.LocalPlayer
+ for i,v in pairs(game.Players:GetPlayers()) do
+	 v.Chatted:connect(function(message)
+	 if message == ";reach" then
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:connect(function(key)
+    if key == "r" then
+game.Players.LocalPlayer.Backpack.LinkedSword.client:Remove()
+game.Players.LocalPlayer.Backpack.LinkedSword.Handle.Size = Vector3.new(1,0.8,29)
+    end
+        end)
+	 end
+	 	end)
+		 	end		
+
+for i,v in pairs(game.Players:GetPlayers()) do
+	v.Chatted:connect(function(message)
+	if message == ";noclip" then
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+	game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+	end)
+local plr = game.Players.LocalPlayer
+local mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+if key == "e" then
+	noclip = not noclip
+		game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)	
+end
+end)
+end
+end)
+end
+
+
+
+		 local plr = game.Players.LocalPlayer
+ for i,v in pairs(game.Players:GetPlayers()) do
+	 v.Chatted:connect(function(message)
+	 if message == ";click tp" then
+	local plr = game.Players.LocalPlayer
+	local mouse = plr:GetMouse()
+	local tool = Instance.new("Tool")
+	tool.Parent = game.Players.LocalPlayer.Backpack
+	tool.Name = "quentins gay click tp"
+	tool.RequiresHandle = false
+	tool.Activated:connect(function()
+	plr.Character.HumanoidRootPart.CFrame = CFrame.new(mouse.Hit.x,mouse.Hit.y,mouse.Hit.z)
+	 end)
+	 end
+	end)
+	end
